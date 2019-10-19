@@ -2,7 +2,7 @@ package com.zipcodewilmington.scientificcalculator;
 
 public class BasicCalculator {
 
-    double number;
+    private double number;
 
     public double add(double x, double y){
         return number = x + y;
@@ -17,13 +17,25 @@ public class BasicCalculator {
     }
 
     public double divide(double x, double y){
-        return number = x / y;
+
+        if(y == 0) {
+           return number = 0;
+        }
+        else{
+            return number = x / y;
+        }
     }
 
-    public double squareRoot(double x){
-        return number = Math.sqrt(x);
-    }
 
+    public double squareRoot(double x) {
+
+        if (x < 0) {
+            return number = 0;
+        }
+        else {
+            return number = Math.sqrt(x);
+        }
+    }
     public double square(double x){
         return number = x * x;
     }
