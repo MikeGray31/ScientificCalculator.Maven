@@ -19,10 +19,10 @@ public class BasicCalculator {
     public double divide(double x, double y){
 
         if(y == 0) {
-           return number = 0;
+            return number;
         }
         else{
-            return number = x / y;
+            return x / y;
         }
     }
 
@@ -33,7 +33,7 @@ public class BasicCalculator {
             return number = 0;
         }
         else {
-            return number = Math.sqrt(x);
+            return Math.sqrt(x);
         }
     }
     public double square(double x){

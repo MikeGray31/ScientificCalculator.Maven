@@ -6,24 +6,25 @@ public class ScientificCalculator {
 
     public double factorial(double x){
 
-        if(x <= 0){
-            Console.println("Cannot find result of 0!");
+        try{
+            return "Cannot find result of a negative factorial.";
+        }
+        else if(x == 0) {
+            number = 1;
         }
         else {
             for (double i = 0; i <= x; i++) {
                 number *= x;
             }
         }
-        return number;
+        return Double.toString(number);
 
     }
 
     public double inverse(double x){
-        double number = 0;
-
         if(x == 0){
-            Console.println("Cannot find result of 1/0");
-            number = 0;
+            return "Undefined";
+
         }
         else{
             number = 1/x;
@@ -59,5 +60,25 @@ public class ScientificCalculator {
         return number = Math.atan(x);
     }
 
+    public double ln(double x){
+
+        if (x <= 0) {
+            return number;
+        }
+        else{
+            return number = Math.log(x);
+        }
+    }
+
+    public double logBase10(double x){
+        if(x <= 0){
+            return number;
+        }
+        else {
+            return number = Math.log10(x);
+        }
+    }
+
+    public double inverselog
 
 }
